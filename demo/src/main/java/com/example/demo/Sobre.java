@@ -12,7 +12,7 @@ public class Sobre {
         this.estudantes = nome;
     }
 
-    public String getPreco() {
+    public String getProjeto() {
         return projeto;
     }
 
