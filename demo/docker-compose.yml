@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  quiz-api:
+    build: .
+    container_name: quiz-api-container
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./quiz.json:/app/quiz.json
+    networks:
+      - quiz-network
+
+networks:
+  quiz-network:
+    driver: bridge
